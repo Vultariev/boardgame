@@ -2,67 +2,66 @@ body
 {
   background-color: rgb(0,0,0);
   color: rgb(100,0,200);
-  font-family: "Verdana", "Sans", "Serif"
 }
 
 div
 {
-  background-color: rgba(100,100,100,0.3);
-  color: rgb(150,0,250);
-  padding: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 10px;
+	background-color: rgba(100,100,100,0.3);
+	color: rgb(150,0,250);
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 10px;
 }
 
 *.title
 {
-  text-align: center;
+	text-align: center;
 }
 
 div.left
 {
-  display: block;
-  float: left;
+	display: block;
+	float: left;
 }
 
 div.right
 {
-  display: block;
-  float: right;
+	display: block;
+	float: right;
 }
 
 div.wa
 {
-  width: auto;
+	width: auto;
 }
 
 div.w0
 {
-  width: 10%;
+	width: 10%;
 }
 
 div.w1
 {
-  width: 22%;
+	width: 22%;
 }
 
 div.w2
 {
-  width: 47%;
+	width: 47%;
 }
 
 div.w3
 {
-  width: 72%;
+	width: 72%;
 }
 
 div.w4
 {
-  width: 95%;
+	width: 95%;
 }
 
 div.w5
 {
-  width: 100%;
+	width: 100%;
 }
