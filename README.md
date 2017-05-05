@@ -1,2 +1,3 @@
-This is a board game!
+# Astrofinance
+
 To play, open [index.html](index.html)
