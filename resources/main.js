@@ -30,7 +30,7 @@ var canvas = document.getElementById("theCanvas");
       function reset()
       {
         fill("#FFFFFF");
-        rect(xp,yp,10,10);
+        rect(0,0,400,400);
         xp = 0;
         yp = 0;
         fill("#FF0000");
