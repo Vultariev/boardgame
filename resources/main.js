@@ -26,7 +26,6 @@
       }
       var xp = 0;
       var yp = 0;
-      var derp = document.getElementById("shit")
       function reset()
       {
         fill("#FFFFFF");
