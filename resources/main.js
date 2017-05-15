@@ -1,107 +1,107 @@
-      var canvas = document.getElementById("theCanvas");
-      var ctx = canvas.getContext("2d");
-      function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-      }
-      var line = function(x1,y1,x2,y2)
+var canvas = document.getElementById("theCanvas");
+var ctx = canvas.getContext("2d");
+function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+}
+var line = function(x1,y1,x2,y2)
+{
+      ctx.moveTo(x1,y1);
+      ctx.lineTo(x2,y2);
+      ctx.stroke();
+};
+var fill = function(color)
+{
+      ctx.fillStyle = color;
+};
+function componentToHex(c) {
+      var hex = c.toString(16);
+      return hex.length == 1 ? "0" + hex : hex;
+}
+function rgb(r, g, b) {
+      return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+function rect(x1,y1,x2,y2)
+{
+      ctx.fillRect(x1,y1,x2,y2);
+}
+var xp = 0;
+var yp = 0;
+function reset()
+{
+      fill("#FFFFFF");
+      rect(0,0,400,400);
+      xp = 0;
+      yp = 0;
+      fill("#FF0000");
+      rect(xp,yp,10,10);
+}
+function right()
+{
+      fill("#FFFFFF");
+      rect(xp,yp,10,10);
+      if(xp < 390)
       {
-        ctx.moveTo(x1,y1);
-        ctx.lineTo(x2,y2);
-        ctx.stroke();
-      };
-      var fill = function(color)
+            xp += 10;
+      }
+      fill("#FF0000");
+      rect(xp,yp,10,10);
+}
+function left()
+{
+      fill("#FFFFFF");
+      rect(xp,yp,10,10);
+      if(xp > 0)
       {
-        ctx.fillStyle = color;
-      };
-      function componentToHex(c) {
-        var hex = c.toString(16);
-        return hex.length == 1 ? "0" + hex : hex;
+            xp += -10;
       }
-      function rgb(r, g, b) {
-        return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-      }
-      function rect(x1,y1,x2,y2)
+      fill("#FF0000");
+      rect(xp,yp,10,10);
+}
+function up()
+{
+      fill("#FFFFFF");
+      rect(xp,yp,10,10);
+      if(yp < 390)
       {
-        ctx.fillRect(x1,y1,x2,y2);
+            yp += 10;
       }
-      var xp = 0;
-      var yp = 0;
-      function reset()
+      fill("#FF0000");
+      rect(xp,yp,10,10);
+}
+function down()
+{
+      fill("#FFFFFF");
+      rect(xp,yp,10,10);
+      if(yp > 0)
       {
-        fill("#FFFFFF");
-        rect(0,0,400,400);
-        xp = 0;
-        yp = 0;
-        fill("#FF0000");
-        rect(xp,yp,10,10);
+            yp += -10;
       }
-      function right()
+      fill("#FF0000");
+      rect(xp,yp,10,10);
+}
+function move(e)
+{
+      var keynum;
+      if(window.event)
       {
-        fill("#FFFFFF");
-        rect(xp,yp,10,10);
-        if(xp < 400-10)
-        {
-          xp += 10;
-        }
-        fill("#FF0000");
-        rect(xp,yp,10,10);
+            keynum = e.which;
       }
-      function left()
+      keynum = String.fromCharCode(keynum);
+      if(keynum === "w")
       {
-        fill("#FFFFFF");
-        rect(xp,yp,10,10);
-        if(xp > 0)
-        {
-          xp += -10;
-        }
-        fill("#FF0000");
-        rect(xp,yp,10,10);
+            down();
       }
-      function up()
+      else if(keynum === "s")
       {
-        fill("#FFFFFF");
-        rect(xp,yp,10,10);
-        if(yp < 400-10)
-        {
-          yp += 10;
-        }
-        fill("#FF0000");
-        rect(xp,yp,10,10);
+            up();
       }
-      function down()
+      else if(keynum === "a")
       {
-        fill("#FFFFFF");
-        rect(xp,yp,10,10);
-        if(yp > 0)
-        {
-          yp += -10;
-        }
-        fill("#FF0000");
-        rect(xp,yp,10,10);
+            left();
       }
-      function move(e)
+      else if(keynum === "d")
       {
-        var keynum;
-        if(window.event) { // IE
-          keynum = e.keyCode;
-        } else if(e.which){ // Netscape/Firefox/Opera
-          keynum = e.which;
-        }
-        keynum = String.fromCharCode(keynum);
-        if(keynum === "w")
-        {
-          down();
-        }
-        else if(keynum === "s") {
-          up();
-        }
-        else if(keynum === "a")
-        {
-          left();
-        }
-        else if(keynum === "d")
-        {
-          right();
-        }
+            right();
       }
-      reset();
+}
+reset();
