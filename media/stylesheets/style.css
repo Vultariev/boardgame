@@ -1,5 +1,6 @@
 body
 {
+	margin: auto;
 	background-color: rgb(0,0,0);
 	color: rgb(100,0,200);
 	font-family: "Aldrich", monospace;
