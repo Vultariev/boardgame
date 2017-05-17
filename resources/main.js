@@ -1,5 +1,6 @@
 var canvas = document.getElementById("theCanvas");
 var ctx = canvas.getContext("2d");
+var board = document.getElementById("boardImg");
 function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -68,6 +69,5 @@ window.onload = function()
 {
 	fill(rgb(255,255,255));
 	rect(0,0,400,400);
-	var board = document.getElementById("boardImg");
 	drawImage(0,0,board);
 };
