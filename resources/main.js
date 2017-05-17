@@ -53,7 +53,7 @@ function move(e)
             right();
       }
 }
-funciton pos(x,y)
+function pos(x,y)
 {
 	this.x = x;
 	this.y = y;
