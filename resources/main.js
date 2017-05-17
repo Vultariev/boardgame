@@ -64,7 +64,7 @@ function player(name,piece)
 	this.name = name;
 	this.piece = piece;
 }
-window.onload = funciton()
+window.onload = function()
 {
 	fill(rgb(255,255,255));
 	rect(0,0,400,400);
