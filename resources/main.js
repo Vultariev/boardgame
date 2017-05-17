@@ -24,61 +24,6 @@ function rect(x1,y1,x2,y2)
 {
       ctx.fillRect(x1,y1,x2,y2);
 }
-var xp = 0;
-var yp = 0;
-function reset()
-{
-      fill("#FFFFFF");
-      rect(0,0,400,400);
-      xp = 0;
-      yp = 0;
-      fill("#FF0000");
-      rect(xp,yp,10,10);
-}
-function right()
-{
-      fill("#FFFFFF");
-      rect(xp,yp,10,10);
-      if(xp < 390)
-      {
-            xp += 10;
-      }
-      fill("#FF0000");
-      rect(xp,yp,10,10);
-}
-function left()
-{
-      fill("#FFFFFF");
-      rect(xp,yp,10,10);
-      if(xp > 0)
-      {
-            xp += -10;
-      }
-      fill("#FF0000");
-      rect(xp,yp,10,10);
-}
-function up()
-{
-      fill("#FFFFFF");
-      rect(xp,yp,10,10);
-      if(yp < 390)
-      {
-            yp += 10;
-      }
-      fill("#FF0000");
-      rect(xp,yp,10,10);
-}
-function down()
-{
-      fill("#FFFFFF");
-      rect(xp,yp,10,10);
-      if(yp > 0)
-      {
-            yp += -10;
-      }
-      fill("#FF0000");
-      rect(xp,yp,10,10);
-}
 function move(e)
 {
       var keynum;
@@ -104,4 +49,7 @@ function move(e)
             right();
       }
 }
-reset();
+function player(name,peice)
+{
+	
+}
