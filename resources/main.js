@@ -66,6 +66,8 @@ function player(name,piece)
 }
 window.onload = funciton()
 {
+	fill(rgb(255,255,255));
+	rect(0,0,400,400);
 	var board = document.getElementById("board");
 	drawImage(0,0,board);
 }
