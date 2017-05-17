@@ -70,4 +70,4 @@ window.onload = funciton()
 	rect(0,0,400,400);
 	var board = document.getElementById("board");
 	drawImage(0,0,board);
-}
+};
