@@ -49,7 +49,14 @@ function move(e)
             right();
       }
 }
-function player(name,peice)
+funciton pos(x,y)
 {
-	
+	this.x = x;
+	this.y = y;
+}
+function player(name,piece)
+{
+	this.pos = new pos(0,0);
+	this.name = name;
+	this.piece = piece;
 }
