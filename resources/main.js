@@ -11,18 +11,22 @@ var line = function(x1,y1,x2,y2)
 };
 var fill = function(color)
 {
-      ctx.fillStyle = color;
+	ctx.fillStyle = color;
 };
 function componentToHex(c) {
-      var hex = c.toString(16);
-      return hex.length == 1 ? "0" + hex : hex;
+	var hex = c.toString(16);
+	return hex.length == 1 ? "0" + hex : hex;
 }
 function rgb(r, g, b) {
-      return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+	return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 function rect(x1,y1,x2,y2)
 {
-      ctx.fillRect(x1,y1,x2,y2);
+	ctx.fillRect(x1,y1,x2,y2);
+}
+function drawImage(img,x,y)
+{
+	ctx.drawImage(img,x,y);
 }
 function move(e)
 {
@@ -60,3 +64,5 @@ function player(name,piece)
 	this.name = name;
 	this.piece = piece;
 }
+var board = document.getElementById("boardImg");
+drawimage(0,0,board);
