@@ -68,6 +68,6 @@ window.onload = function()
 {
 	fill(rgb(255,255,255));
 	rect(0,0,400,400);
-	var board = document.getElementById("board");
+	var board = document.getElementById("boardImg");
 	drawImage(0,0,board);
 };
