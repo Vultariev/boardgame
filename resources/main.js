@@ -64,5 +64,8 @@ function player(name,piece)
 	this.name = name;
 	this.piece = piece;
 }
-var board = document.getElementById("boardImg");
-drawimage(0,0,board);
+window.onload = funciton()
+{
+	var board = document.getElementById("board");
+	drawImage(0,0,board);
+}
