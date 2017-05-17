@@ -69,5 +69,5 @@ window.onload = function()
 {
 	fill(rgb(255,255,255));
 	rect(0,0,400,400);
-	drawImage(0,0,board);
+	drawImage(board,0,0);
 };
