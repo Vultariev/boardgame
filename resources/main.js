@@ -2,7 +2,7 @@ var canvas = document.getElementById("theCanvas");
 var ctx = canvas.getContext("2d");
 var board = document.getElementById("boardImg");
 var mainLoop;
-var players = [];
+var players = [new player("player1","rocket")];
 var loaded = false;
 var line = function(x1,y1,x2,y2)
 {
@@ -73,6 +73,7 @@ function main(stat)
 		setInterval(function()
 		{
 			dBoard()
+			dPlayers();
 		}, 100);
 	}
 	if(stat === "stop")
@@ -83,6 +84,15 @@ function main(stat)
 function dBoard()
 {
 	ctx.drawImage(board,0,0,400,400);
+}
+function dPlayers()
+{
+	var p;
+	for(var i=0; i < players.length;i++)
+	{
+		p = document.getElementById(players[i].piece);
+		ctx.drawImage(p,players[i].pos.x, players[i].pos.y);
+	}
 }
 window.onload = function()
 {
