@@ -12,6 +12,12 @@ body
 {
 	display: block; //Used for random sainity checks
 }
+.centered
+{
+	display: block;
+	left-margin:auto;
+	right-margin:auto;
+}
 button
 {
 	background-color: rgb(10,10,10);
