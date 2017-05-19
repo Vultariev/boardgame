@@ -4,6 +4,14 @@ body
 	color: rgb(100,0,200);
 	font-family: "Aldrich", monospace;
 }
+.hidden
+{
+	display: none;
+}
+.visible
+{
+	display: block; //Used for random sainity checks
+}
 /*
 div
 {
