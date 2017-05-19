@@ -89,6 +89,7 @@ function main(stat)
 	if(stat === "stop")
 	{
 		clearInterval(mainLoop);
+    hidePlayerconf();
 	}
 }
 function dBoard()
