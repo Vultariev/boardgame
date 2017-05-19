@@ -1,6 +1,8 @@
 var canvas = document.getElementById("theCanvas");
 var ctx = canvas.getContext("2d");
 var board = document.getElementById("boardImg");
+var mainLoop;
+var players = [];
 var line = function(x1,y1,x2,y2)
 {
       ctx.moveTo(x1,y1);
@@ -64,7 +66,18 @@ function player(name,piece)
 }
 function main(stat)
 {
-	
+	if(stat === "start")
+	{
+		mainLoop = 
+		setInterval(function()
+		{
+			
+		}, 100);
+	}
+	if(stat === "stop")
+	{
+		clearInterval(mainLoop);
+	}
 }
 window.onload = function()
 {
