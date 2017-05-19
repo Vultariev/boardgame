@@ -72,7 +72,7 @@ function main(stat)
 		mainLoop = 
 		setInterval(function()
 		{
-			
+			dBoard()
 		}, 100);
 	}
 	if(stat === "stop")
