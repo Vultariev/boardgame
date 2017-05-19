@@ -14,9 +14,10 @@ body
 }
 .centered
 {
-	left-margin: auto;
-	right-margin: auto;
-	width: auto;
+	display:block;
+	left-margin:auto;
+	right-margin:auto;
+	width:auto;
 }
 button
 {
@@ -44,7 +45,6 @@ form
 	padding: 5px;
 	border: 2px solid rgb(30,30,30);
 }
-/*
 div
 {
 	background-color: rgba(100,100,100,0.3);
@@ -76,7 +76,7 @@ div.wa
 {
 	width: auto;
 }
-
+/*
 div.w0
 {
 	width: 10%;
