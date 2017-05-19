@@ -13,16 +13,9 @@
 		</header>
 		<button onclick="main('start')" style="display:block;">Start</button>
 		<button onclick="main('stop')" style="display:block;">Stop</button>
-		<canvas id="theCanvas" height="400" width="400"></canvas>
-		<div id="images" style="display:none;">
-			<img src="media/board.png" id="boardImg">
-			<img src="media/players/Car.png" id="car">
-			<img src="media/players/Comet.png" id="comet">
-			<img src="media/players/FlyingSaucer.png" id="suace">
-			<img src="media/players/Rocket.png" id="rocket">
-		</div>
 		<div id="player-conf" class="hidden">
 			<form action="">
+				<h2>Add Players</h2>
 				Player Name: <input type="text" name="playername" value="John"><br>
 				Player Piece:<br>
 				<input type="radio" name="piece" value="car">Car<br>
@@ -32,6 +25,14 @@
 				<input type="button" name="addP" value="Add Player">
 				<input type="button" name="submitP" value="Done!" onclick="hidePlayerconf()">
 			</form>
+		</div>
+		<canvas id="theCanvas" height="400" width="400"></canvas>
+		<div id="images" style="display:none;">
+			<img src="media/board.png" id="boardImg">
+			<img src="media/players/Car.png" id="car">
+			<img src="media/players/Comet.png" id="comet">
+			<img src="media/players/FlyingSaucer.png" id="suace">
+			<img src="media/players/Rocket.png" id="rocket">
 		</div>
 		<script src="resources/main.js"></script>
 	</body>
