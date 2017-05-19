@@ -14,9 +14,9 @@ body
 }
 .centered
 {
-	display: block;
 	left-margin:auto;
 	right-margin:auto;
+	width:auto;
 }
 button
 {
