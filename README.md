@@ -1,3 +1,3 @@
 # Astrofinance
 
-To play, open [index.html](index.html)
+To play, goto [vultariev.github.io/boardgame](https://vultariev.github.io/boardgame/)
