@@ -69,11 +69,21 @@ function main(stat)
 {
 	if(stat === "start")
 	{
+    var tog = [false];
 		mainLoop =
 		setInterval(function()
 		{
 			dBoard()
-			dPlayers();
+      if(players.length > 0)
+      {
+			     dPlayers();
+      }
+      else if(!tog[0])
+      {
+        tog[0] = true
+        alert("Please add some players.");
+        showPlayerconf();
+      }
 		}, 100);
 	}
 	if(stat === "stop")
