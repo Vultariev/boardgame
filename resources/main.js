@@ -122,7 +122,8 @@ function showPlayerconf()
 window.onload = function()
 {
 	loaded = true;
-	//fill(rgb(255,255,255));
-	//rect(0,0,600,600);
-	//ctx.drawImage(board,0,0,600,600);
+	if(0 === Math.floor(Math.random() * 10))
+	{
+		document.getElementById("feedme").innerHTML = "Pirates are better than ninjas";
+	}
 };
