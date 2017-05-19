@@ -1,9 +1,6 @@
 var canvas = document.getElementById("theCanvas");
 var ctx = canvas.getContext("2d");
 var board = document.getElementById("boardImg");
-function sleep(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-}
 var line = function(x1,y1,x2,y2)
 {
       ctx.moveTo(x1,y1);
@@ -69,5 +66,5 @@ window.onload = function()
 {
 	fill(rgb(255,255,255));
 	rect(0,0,400,400);
-	drawImage(board,0,0);
+	ctx.drawImage(board,0,0,400,400);
 };
