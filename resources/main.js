@@ -94,7 +94,7 @@ function main(stat)
 }
 function dBoard()
 {
-	ctx.drawImage(board,0,0,400,400);
+	ctx.drawImage(board,0,0,600,600);
 }
 function dPlayers()
 {
@@ -117,6 +117,6 @@ window.onload = function()
 {
 	loaded = true;
 	//fill(rgb(255,255,255));
-	//rect(0,0,400,400);
-	//ctx.drawImage(board,0,0,400,400);
+	//rect(0,0,600,600);
+	//ctx.drawImage(board,0,0,600,600);
 };
