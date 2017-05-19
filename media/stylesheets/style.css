@@ -16,7 +16,7 @@ button
 {
 	background-color: rgb(10,10,10);
 	color: rgb(100,0,200);
-	border: none;
+	border: 2px solid rgb(30,30,30);
 }
 button:hover
 {
