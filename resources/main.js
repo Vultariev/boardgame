@@ -2,7 +2,7 @@ var canvas = document.getElementById("theCanvas");
 var ctx = canvas.getContext("2d");
 var board = document.getElementById("boardImg");
 var mainLoop;
-var players = [new player("player1","rocket")];
+var players = [];
 var loaded = false;
 var line = function(x1,y1,x2,y2)
 {
@@ -69,7 +69,7 @@ function main(stat)
 {
 	if(stat === "start")
 	{
-		mainLoop = 
+		mainLoop =
 		setInterval(function()
 		{
 			dBoard()
@@ -94,10 +94,18 @@ function dPlayers()
 		ctx.drawImage(p,players[i].pos.x, players[i].pos.y);
 	}
 }
+function hidePlayerconf()
+{
+  document.getElementById("player-conf").className = "hidden"
+}
+function showPlayerconf()
+{
+  document.getElementById("player-conf").className = "visible"
+}
 window.onload = function()
 {
 	loaded = true;
 	//fill(rgb(255,255,255));
 	//rect(0,0,400,400);
-	//ctx.drawImage(board,0,0,400,400);		
+	//ctx.drawImage(board,0,0,400,400);
 };
