@@ -74,7 +74,7 @@ function main(stat)
 		setInterval(function()
 		{
 			dBoard()
-      if(players.length > 0)
+      if(players.length > 1)
       {
 			     dPlayers();
       }
