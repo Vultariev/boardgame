@@ -10,13 +10,13 @@ body
 }
 .visible
 {
-	display: block; //Used for random sainity checks
+	display: block; // Used for random sanity checks
 }
 .centered
 {
-	left-margin:auto;
-	right-margin:auto;
-	width:auto;
+	left-margin: auto;
+	right-margin: auto;
+	width: auto;
 }
 button
 {
