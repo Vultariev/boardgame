@@ -32,6 +32,11 @@ input:hover
 {
 	background-color: rgb(30,30,30);
 }
+form
+{
+	padding: 5px;
+	border: 2px solid rgb(30,30,30);
+}
 /*
 div
 {
