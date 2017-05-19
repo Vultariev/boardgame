@@ -67,7 +67,7 @@ function player(name,piece)
 }
 function addPlayer()
 {
-  players[players.length] = new player(document.getElementById("playername")+"".value,document.getElementByName("piece").value+"");
+  players[players.length] = new player(document.getElementById("playername")+"".value,document.getElementsByName("piece").value+"");
 }
 function main(stat)
 {
