@@ -65,6 +65,10 @@ function player(name,piece)
 	this.name = name;
 	this.piece = piece;
 }
+function addPlayer()
+{
+  
+}
 function main(stat)
 {
 	if(stat === "start")
