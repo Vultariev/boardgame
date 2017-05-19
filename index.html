@@ -21,9 +21,16 @@
 			<img src="media/players/FlyingSaucer.png" id="suace">
 			<img src="media/players/Rocket.png" id="rocket">
 		</div>
-		<div id="player-conf" class="">
+		<div id="player-conf" class="visible">
 			<form action="">
-				Player Name: <input type="text" name="playername" value="John">
+				Player Name: <input type="text" name="playername" value="John"><br>
+				Player Piece:<br>
+				<input type="radio" name="piece" value="car">Car<br>
+				<input type="radio" name="piece" value="comet">Comet<br>
+				<input type="radio" name="piece" value="flyingsaucer">Flying Saucer<br>
+				<input type="radio" name="piece" value="rocket">Rocket<br>
+				<input type="button" name="addP" value="Add Player">
+				<input type="button" name="submitP" value="Done!" onclick="hidePlayerconf()">
 			</form>
 		</div>
 		<script src="resources/main.js"></script>
