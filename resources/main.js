@@ -3,6 +3,7 @@ var ctx = canvas.getContext("2d");
 var board = document.getElementById("boardImg");
 var mainLoop;
 var players = [];
+var loaded = false;
 var line = function(x1,y1,x2,y2)
 {
       ctx.moveTo(x1,y1);
@@ -79,9 +80,14 @@ function main(stat)
 		clearInterval(mainLoop);
 	}
 }
+function dBoard()
+{
+	ctx.drawImage(board,0,0,400,400);
+}
 window.onload = function()
 {
-	fill(rgb(255,255,255));
-	rect(0,0,400,400);
-	ctx.drawImage(board,0,0,400,400);		
+	loaded = true;
+	//fill(rgb(255,255,255));
+	//rect(0,0,400,400);
+	//ctx.drawImage(board,0,0,400,400);		
 };
