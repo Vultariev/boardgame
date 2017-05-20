@@ -69,7 +69,7 @@ function player(name,piece)
 }
 function addPlayer()
 {
-	players[players.length] = new player(document.getElementById("playername").value,document.querySelector('input[name="piece"]:checked').value+".png");
+	players[players.length] = new player(document.querySelector('input[name = "playername"]').value,document.querySelector('input[name="piece"]:checked').value+".png");
 }
 function main(stat)
 {
