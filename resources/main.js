@@ -1,3 +1,4 @@
+// @license magnet:?xt=urn:btih:87f119ba0b429ba17a44b4bffcab33165ebdacc0&dn=freebsd.txt FreeBSD
 var canvas = document.getElementById("theCanvas");
 var ctx = canvas.getContext("2d");
 var board = document.getElementById("boardImg");
@@ -127,3 +128,4 @@ window.onload = function()
 		document.getElementById("feedme").innerHTML = "Pirates are better than ninjas";
 	}
 };
+// @license-end
